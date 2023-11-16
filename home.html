@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital@1&family=Lato:wght@300&family=Roboto&family=Work+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="">
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+   .container-fluid img{
+    border-radius: 10px;
+    max-width: 100%;
+    height: 100%;
+
+
+   }
+   nav{
+    
+    background-color: white;
+   
+   }
+   .d-flex{
+
+    border-radius: 10px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-image: linear-gradient(#c29880,white);
+ margin-top: 60px;
+ background-repeat: no-repeat;
+    background-size: cover;
+    background-image: 
+    url(https://www.vietnam.vn/wp-content/uploads/2023/05/Ngam-mau-iPhone-15-Ultra-cao-cap-voi-khung-titan.gif);
+}
+   
+.d-flex.row{
+    background-image: url(https://pin.it/2roKDjl);
+    position: relative;
+}
+  .texts{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+  }
+ 
+.navbar-nav a{
+    color:#c29880;
+    font-weight: bolder;
+    margin-right: 50px;
+
+}
+
+  .card{
+  text-align: center;
+  border-radius: 10px;
+color: black;
+  }
+ 
+    h2,h5{
+        color:#14A44D;
+        font-weight: bolder;
+        text-decoration: underline;
+        text-decoration-color: #14A44D;
+    }
+    h1{
+        font-weight: bolder;
+        color: #14A44D;
+    }
+    .brand-items{
+        background-image: linear-gradient(white,#c29880,white);
+    }
+    
+    .one{
+        background-image: url(apple-logo.gif);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+       
+    }
+    .two{
+        background-image: url(samsunglogo.gif);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+  
+    }
+    .three{
+        background-image: url(infinixlogo.gif);
+        background-repeat: no-repeat;
+        background-position: bottom;
+     
+        background-size: contain;
+    }
+    .four{
+        background-image: url(pixelogo.gif);
+        background-repeat: no-repeat;
+        background-position: bottom;
+      
+        background-size: contain;
+    }
+
+    .five{
+        background-image: url(nokialogo.gif);
+        background-repeat: no-repeat;
+        background-position: bottom;
+       
+        background-size: contain;
+    }
+
+    .six{
+        background-image: url(huaweigif.gif);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        color:black;
+        background-size: cover;
+        
+    }
+/* Add initial styles to set the starting position */
+.d-flex img {
+  opacity: 1;
+  transform: translateX(0);
+  align-self: flex-end;
+  
+  
+}
+
+/* Add animation with keyframes */
+@keyframes flyoff {
+  from {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+  to{
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+/* Apply animation to the image */
+.d-flex img:hover {
+  animation: flyoff 1s ease-in-out;
+}
+
+
+/* Add initial styles to set the starting position */
+.card img {
+  opacity: 0.5;
+  transform: translateX(0) rotate(0deg);
+  transition: transform 2s ease;
+}
+
+/* Add animation with keyframes */
+@keyframes flyIn {
+  from {
+    opacity: 1;
+    transform: translateX(100%) rotate(0deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.5) rotate(90deg);
+  }
+}
+
+/* Apply animation to the image */
+.card img:hover {
+  animation: flyIn 2s ease;
+}
+
+
+body{
+    overflow:scroll;
+}
+
+/* Adjust these styles based on your layout and preferences */
+.d-flex2{
+height: 100%;
+margin-bottom: -50px;
+}
+
+
+.navbar-nav .nav-link {
+  position: relative;
+}
+
+
+
+.navbar-nav .nav-link {
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  transform: scale(2);
+}
+
+
+
+.navbar-nav .nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #c29880; /* Change to your desired underline color */
+  transition: width 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(194, 152, 128, 0); /* Initial box shadow for glow effect */
+}
+
+.navbar-nav .nav-link:hover::before {
+  width: 100%;
+  box-shadow: 0 0 10px rgba(194, 152, 128, 1); /* Adjust the values for the desired glow effect */
+}
+
+
+.form-inline {
+  display: flex;
+  align-items: center;
+}
+
+.form-control {
+  background-color: #c29880; /* Background color */
+  border: 1px solid #c29880; /* Border color */
+  color: #fff; /* Text color */
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5); /* Placeholder text color */
+}
+
+.btn-outline {
+  border-color: #c29880; /* Border color for the button */
+  color: #c29880; /* Text color for the button */
+  font-weight: bolder;
+}
+
+.btn-outline:hover {
+  background-color: #c29880; /* Background color on hover */
+  color: #fff; /* Text color on hover */
+  font-weight: bolder;
+}
+
+#login{
+    margin-left: 50px;
+}
+.btn-lg{
+    padding: 10px;
+    font-size: larger;
+   
+}
+
+   /* Add animation with keyframes */
+   @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Apply animations to the heading */
+        .display-4 {
+            animation: fadeIn 5s ease-in-out;
+          
+            font-family: 'Brygada 1918', sans-serif; /* Add your desired font family */
+            /* Add any other styles you want */
+        }
+
+        /* Example: Apply rotation on hover */
+        .display-4:hover {
+            animation: rotate 2s linear infinite; /* Rotate infinitely on hover */
+        }
+
+        .navbar-brand {
+            font-family: 'Brygada 1918', sans-serif; /* Add your desired font family */
+             /* Adjust the font size */
+            color:#14A44D ; /* Set your desired text color */
+            font-weight: bolder;
+            text-transform: uppercase;
+            letter-spacing: 4px; /* Adjust the letter spacing */
+           
+        }
+
+        .navbar-brand i {
+            margin-right: 10px; /* Adjust the spacing between the icon and text */
+        }
+
+    
+
+.services p{
+    border-radius: 10px;
+    color: #592d24;
+    background-color: white;
+    padding: 10px;
+}
+.services-section{
+    background-image: linear-gradient(white,#c29880,white);
+}
+.services h1,.services h4{
+    text-decoration: underline;
+}
+.information{
+  background-image: linear-gradient(white,#c29880,white);
+  justify-content: space-around;
+ 
+}
+.info{
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+
+}
+</style>
+<body>
+    
+<div class="coontainer">
+    
+        <nav class="navbar navbar-expand-lg fixed-top ">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-mobile-alt" style="color: #592d24;"></i>
+                    Clintech
+                </a>
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-dark">
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class=" navbar-nav mb--5 ml-auto ">
+                        <li class="nav-item">
+                          <a class="nav-link  " href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="brands.html">Brands</a>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">contact</a>
+                        </li>
+                          
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                </div>
+                <a id="login" class="btn btn-outline " href="#login">login</a>
+            </div>
+        </nav>             
+        </div>
+
+
+
+        <section>
+<div class="container pb-5  d-flex justify-content-end align-items-center
+ shadow-lg p-3 mb-5 bg-body rounded">
+
+
+    <div class=" texts text-center pt-4 ">
+    <h1 class="display-4 col-md-6 ">CLINTECH</h1>
+    <p class="lead col-md-6">Informtion on all brands and models of the best quality phones
+    </p>
+    <p class="col-md-6">Unlock a world of seamless connectivity and technological excellence with Clintech, where we curate the latest
+         and greatest in phone innovations.
+    </p>
+    <h3 claas="col-md-6">We got you covered!!</h3>  
+    <a id="#Get-started" class="btn btn-success btn-lg  " href="#get-started">Get started</a>
+</div>
+    <div>
+       <img class="img-fluid d-flex2  " src="phone5.PNG" width="" height="" >
+    </div>
+    
+</div>
+</section>
+
+
+
+
+<!-- Replace the existing icon filenames with Font Awesome classes -->
+<section class="services-section">
+    <div class="container mt-5 services">
+        <h1 class="text-center mb-5">Our Services</h1>
+        <div class="row">
+          <!-- Service 1: Phone Models Overview -->
+          <div class="col-md-3">
+            <div class="text-center">
+              <i class="fas fa-mobile-alt fa-3x mb-3"></i>
+              <h4> Models Overview</h4>
+              <p>Explore detailed information on the latest phone models, 
+                including specifications, features, colors, and sizes.</p>
+              <button class="btn btn-outline-success">Read More</button>
+            </div>
+          </div>
+      
+          <!-- Service 2: Price Comparison -->
+          <div class="col-md-3">
+            <div class="text-center">
+              <i class="fas fa-dollar-sign fa-3x mb-3" ></i>
+              <h4>Price Comparison</h4>
+              <p>Compare prices from various retailers to ensure you get
+                 the best deals on your desired phone models.</p>
+              <button class="btn btn-outline-success">Read More</button>
+            </div>
+          </div>
+      
+          <!-- Service 3: Color and Size Variants -->
+          <div class="col-md-3">
+            <div class="text-center">
+              <i class="fas fa-palette fa-3x mb-3"></i>
+              <h4>Color and Size Variants</h4>
+              <p>Discover the available color options and sizes for 
+                each phone model to suit your personal style<br> and comfort</p>
+              <button class="btn btn-outline-success">Read More</button>
+            </div>
+          </div>
+      
+          <!-- Service 4: Buying Guide -->
+          <div class="col-md-3">
+            <div class="text-center">
+              <i class="fas fa-book fa-3x mb-3"></i>
+              <h4>Buying Guide</h4>
+              <p>Get assistance in choosing the right phone with our buying guides, including key factors and tips for a hassle-free purchase.</p>
+              <button class="btn btn-outline-success">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+<div class="container mt-5 brand-items ">
+    <h2 class="text-center">Popular brands</h2>
+    <div id="cardCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row ">
+                    <div class="col-md-4 shadow-lg p-3 mb-5 bg-body rounded ">
+                        <div class="card border-0 text-center one">                                                                                                             
+                            <img src="phone4.PNG " class="card-img-top  " alt="Image 1" height="260">
+                            <div class="card-body ">
+                                <h5 class="card-title">Iphones</h5>
+                                <p class="card-text">Seamless integration with the Apple ecosystem.
+                                    They offer security features like facial or fingerprint authentication to protect your personal information.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 shadow-lg p-3 mb-5 bg-body rounded">
+                        <div class="card border-0 two">                                                                                                                                                                                                 
+                            <img src="phone9.PNG " class="card-img-top " alt="Image 2" width="" height="280">
+                            <div class="card-body">
+                                <h5 class="card-title">Samsung</h5>
+                                <p class="card-text">
+                                    The company has built an impressive record on design, garnering more awards than any other
+                                     company in recent years.</p>
+                            </div>
+                        </div>
+                    </div>            
+
+                    <div class="col-md-4 shadow-lg p-3 mb-5 bg-body rounded">                                                                                              
+                        <div class="card border-0 three">                                                                      
+                            <img src="Infinix-Zero-30-5G.webp " class="card-img-top " alt="Image 3"  width="215" height="228" >
+                            <div class="card-body">
+                                <h5 class="card-title">Infinix</h5>
+                                <p class="card-text">
+                                    Infinix's industry-first UPS technology dramatically
+                                     improves the signal experience in scenarios such as gaming, short-form video, weak networks,
+                                     airports, low RAT, and elevators
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                </div>
+            </div>
+
+            <!-- Add more carousel items with rows of cards as needed -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-4 shadow-lg p-3 mb-5 bg-body rounded">                                                                                              
+                        <div class="card border-0 four">                                                                      
+                            <img src="pixel.jfif" class="card-img-top " alt="Image 3"  width="215" height="228" >
+                            <div class="card-body">
+                                <h5 class="card-title">Google pixel</h5>
+                                <p class="card-text">
+Google's Pixel phones stand out for their software features, 
+especially when it comes to tasks like editing photos, customizing your wallpaper customization
+ and screening calls.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 shadow-lg p-3 mb-5 bg-body rounded">                                                                                              
+                        <div class="card border-0 five">                                                                      
+                            <img src="nokia.jfif" class="card-img-top " alt="Image 3"  width="215" height="228" >
+                            <div class="card-body">
+                                <h5 class="card-title">Nokia</h5>
+                                <p class="card-text">
+                                    
+Nokia phones feature high-quality materials and go through 
+product testing more vigorous than the industry average. 
+And with 2 years of security patches and 3 years of Android 
+upgrades, your phone is made
+ to last, inside and out.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 shadow-lg p-3 mb-5 bg-body rounded">                                                                                              
+                        <div class="card border-0 six">                                                                      
+                            <img src="huawei.jpg" class="card-img-top " alt="Image 3"  width="215" height="228" >
+                            <div class="card-body">
+                                <h5 class="card-title">huawei</h5>
+                                <p class="card-text">                                                                                                                            
+                                    Huawei constantly works on perfecting the Android platform. Huawei has a 
+                                    special interface called Emotion, which is the improved version Google Android. 
+                                  
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                    <!-- Add more cards for the second carousel item -->
+
+                </div>
+            </div>
+
+            <!-- Add more carousel items as needed -->
+
+        </div>
+        <a class="carousel-control-prev" href="#cardCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#cardCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<div class="jumbotron">
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-md-6">
+      <h5 class="">Navigating Platforms: Exploring iOS and Android</h5>
+      <p class="lead">
+        "Unlock the power of choice! Understanding the nuances between 
+        iOS and Android empowers you to make a smartphone selection tailored to
+         your unique needs. Dive into the realms of both operating systems,
+          exploring their distinct features, functionalities, and user experiences. 
+          Whether it's the sleek simplicity of iOS or the customizable versatility 
+          of Android, your journey to the perfect device begins with knowing your options. Elevate your tech-savvy decision-making and discover a phone that seamlessly integrates with your demands and aspirations."
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img src="iosvsA.jfif" alt="iOS and Android Devices" class="img-fluid">
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="container-fluid mt-5 ">
+  <h1 class="display-5 text-center">What you'll find at our blog</h1>
+  <div class="row information">
+
+  <div class="col-md-4 ">
+    <div class="row info shadow-lg p-3 mb-5 bg-body rounded">
+    <div class="col-md-6">
+      <h5 class="">Comparisons and Guides</h5>
+      <p>    Create detailed comparisons between different phone models or brands.
+        Develop buying guides for specific needs (e.g., photography, gaming,
+         budget-friendly).</p>
+         <a href="" class="btn btn-outline-success">Read more</a>
+    </div>
+    <div class="col-md-6">
+      <img src="phone3.PNG" class="img-fluid">
+    </div>
+    </div>
+  </div> 
+
+
+  
+  <div class="col-md-4 ">
+    <div class="row info shadow-lg p-3 mb-5 bg-body rounded">
+    <div class="col-md-6">
+      <h5 class="">Accessories and Add-ons</h5>
+      <p>  information about accessories available for each phone model.We
+        Provide recommendations for cases, screen protectors, chargers, etc.<br>Customisable products</p>
+         <a href="" class="btn btn-outline-success">Read more</a>
+    </div>
+    <div class="col-md-6">
+      <img src="phone1.PNG" class="img-fluid">
+    </div>
+    </div>
+  </div> 
+
+  
+  <div class="col-md-4 ">
+    <div class="row info shadow-lg p-3 mb-5 bg-body rounded">
+    <div class="col-md-6">
+      <h5 class="">Operating System Updates</h5>
+      <p> We  Keep users informed about the latest updates from iOS and Android.
+      Highlight new features and improvements.Bug fixes and enhancements,outdated softwares.</p>
+         <a href="" class="btn btn-outline-success">Read more</a>
+    </div>
+    <div class="col-md-6">
+      <img src="phonebg.jpg" class="img-fluid">
+    </div>
+    </div>
+  </div> 
+
+
+  
+  <div class="col-md-4 ">
+    <div class="row info shadow-lg p-3 mb-5 bg-body rounded">
+    <div class="col-md-6">
+      <h5 class="">Tech news and Trends</h5>
+      <p>   We have a section dedicated to the latest tech news and trends in the smartphone industry.
+        Discuss upcoming technologies and innovations.</p>
+         <a href="" class="btn btn-outline-success">Read more</a>
+    </div>
+    <div class="col-md-6">
+      <img src="phone10.png" class="img-fluid">
+    </div>
+    </div>
+  </div> 
+
+  
+  <div class="col-md-4 ">
+    <div class="row info shadow-lg p-3 mb-5 bg-body rounded">
+    <div class="col-md-6">
+      <h5 class="">Community Forum</h5>
+      <p>    Integrate a community forum where users can ask questions and share information.
+        Foster a sense of community among users.Discuss new updates and latest release,likes and dislikes .</p>
+         <a href="" class="btn btn-outline-success">Read more</a>
+    </div>
+    <div class="col-md-6">
+      <img src="phone11.jfif" class="img-fluid">
+    </div>
+    </div>
+  </div> 
+
+  
+  <div class="col-md-4 ">
+    <div class="row info shadow-lg p-3 mb-5 bg-body rounded">
+    <div class="col-md-6">
+      <h5 class="">Tech Events Coverage</h5>
+      <p> We cover major tech events and product launches.
+        Discuss announcements and innovations showcased at these events,news updaates live.</p>
+         <a href="" class="btn btn-outline-success">Read more</a>
+    </div>
+    <div class="col-md-6">
+      <img src="phonebg.jpg" class="img-fluid">
+    </div>
+    </div>
+
+  
+  </div> 
+  <!-- Button with Arrow Icon -->
+  <a href="#" class="btn btn-success btn-lg">
+    Visit Blog
+    <i class="fas fa-arrow-right ml-2"></i>
+  </a>
+</div>
+</div>
+
+<section class="statistics-section  py-5">
+  <h1 class="display-5 text-center">Our Statistics proves we are the best.</h1>
+  <div class="container text-center">
+      <div class="row">
+          <div class="col-md-4">
+              <i class="fas fa-star fa-3x mb-3 "></i>
+              <h5>Phone Reviews</h5>
+              <p class="text-muted">Over 250 million reviews from satisfied users.</p>
+          </div>
+          <div class="col-md-4">
+              <i class="fas fa-users fa-3x mb-3 "></i>
+              <h5>Visitors</h5>
+              <p class="text-muted">Welcoming more than 300 million visitors.</p>
+          </div>
+          <div class="col-md-4">
+              <i class="fas fa-thumbs-up fa-3x mb-3 "></i>
+              <h5>Recommendations</h5>
+              <p class="text-muted">Countless recommendations for the best phone choices.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+  
+<section class="partners-section px-5">
+  <div class="container text-center">
+      <h2>We Are Partnered By</h2>
+      <div class="row mt-4">
+          <div class="col-md-3">
+              <img src="sam.png" alt="Samsung" class="img-fluid partner-logo" >
+          </div>
+          <div class="col-md-3">
+              <img src="applelogo.png" alt="Apple" class="img-fluid partner-logo" >
+          </div>
+          <div class="col-md-3">
+              <img src="infinix-logo.png" alt="Infinix" class="img-fluid partner-logo" height="30">
+          </div>
+          <div class="col-md-3">
+              <img src="nokiagif.gif" alt="Tecno" class="img-fluid partner-logo" height="30">
+          </div>
+      </div>
+      <div class="row ">
+          <div class="col-md-3">
+              <img src="tecno.png" alt="Huawei" class="img-fluid partner-logo">
+          </div>
+          <div class="col-md-3">
+            <img src="Huawei-Company-Logo.jpg" alt="Huawei"
+             class="img-fluid partner-logo" width="100" height="30">
+        </div>
+        <div class="col-md-3">
+          <img src="lg.jfif" alt="Huawei" class="img-fluid partner-logo">
+      </div>
+      <div class="col-md-3">
+        <img src="Lenovo-Logo-1.png" alt="Huawei" class="img-fluid partner-logo" height="30">
+    </div>
+          <!-- Add more partner logos as needed -->
+      </div>
+  </div>
+</section>
+
+
+<script>
+    // Add click event to make the clicked card active
+    $('.carousel .carousel-inner .row .col-md-4').on('click', function () {
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+</script>
+</body>
+</html>
