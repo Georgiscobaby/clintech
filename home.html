@@ -174,7 +174,7 @@ color: black;
   }
   to {
     opacity: 1;
-    transform: scale(1.5) rotate(90deg);
+    transform: scale(1.5) rotate(360deg);
   }
 }
 
@@ -234,13 +234,13 @@ margin-bottom: -50px;
   align-items: center;
 }
 
-.form-control {
+.first {
   background-color: #c29880; /* Background color */
   border: 1px solid #c29880; /* Border color */
   color: #fff; /* Text color */
 }
 
-.form-control::placeholder {
+.first::placeholder {
   color: rgba(255, 255, 255, 0.5); /* Placeholder text color */
 }
 
@@ -280,7 +280,7 @@ margin-bottom: -50px;
                 transform: rotate(0deg);
             }
             to {
-                transform: rotate(360deg);
+                transform: rotate(180deg);
             }
         }
 
@@ -337,6 +337,18 @@ margin-bottom: -50px;
   padding: 20px;
 
 }
+
+.reviews{
+  background-image: linear-gradient(white,#c29880,white);
+}
+.forms{
+  background-image: url(form.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.nav-tabs a{
+  color:white
+}
 </style>
 <body>
     
@@ -369,7 +381,7 @@ margin-bottom: -50px;
                           
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control mr-sm-2 first" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline my-2 my-sm-0" type="submit">Search</button>
                       </form>
                 </div>
@@ -760,7 +772,283 @@ upgrades, your phone is made
 </section>
 
 
+<div class="container mt-5 reviews ">
+  <div class="row ">
 
+      <!-- Column 1: Trending News -->
+      <div class="col-md-6">
+          <h2 class="mb-4">Trending News</h2>
+
+          <!-- News Block 1 -->
+          <div class="d-flex mb-4">                                                             
+              <img src="news2.JPG" alt="News Image" class="mr-3" style="max-width: 100px; height: auto;">
+              <div>
+                  <h5>Apple finally caves, announces plan to bring RCS to iPhones in 2024</h5>
+                  <p>The company finally caved and revealed that it plans to adopt 
+                    RCS in iOS from next year. RCS, as you may know, is the iMessage-like standard that works on top of SMS.
+
+                  </p>
+                  <button class="btn btn-outline-success">Read More</button>
+              </div>
+          </div>
+
+          <!-- News Block 2 -->
+          <div class="d-flex mb-4">
+              <img src="news1.jpg" alt="News Image" class="mr-3" style="max-width: 100px; height: auto;">
+              <div>
+                  <h5>Samsung Expert RAW camera app updated with ND filter feature</h5>
+                  <p>Samsung has updated its Expert RAW camera app with the neutral density (ND) filter feature as an experimental tool. Once you update the app to the latest version from the Galaxy Store, you'll find the ND filter toggle under the app's
+                     "Expert RAW Labs" section in the settings.</p>
+                  <button class="btn btn-outline-success">Read More</button>
+              </div>
+          </div>
+
+          <!-- Add more news blocks as needed -->
+
+      </div>
+
+      <!-- Column 2: User Reviews -->
+      <div class="col-md-6">
+          <h2 class="mb-4">User Reviews</h2>
+
+          <!-- Review 1 -->
+          <div class="mb-4">
+            <img src="profile.avif" width="50px" height="auto" >
+            <p>"The brand collections are fantastic. I'm a huge fan!"</p>
+            <cite>-  Musa</cite>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="mb-4">
+            <img src="profile.avif" width="50px" height="auto" >
+            <p>This website is fantastic! It helped me choose the perfect phone for my needs.
+               The detailed comparisons and guides were especially helpful.</p>
+            <cite>-  Ayomide</cite>
+          </div>
+
+          <div class="mb-4">
+            <img src="profile.avif" width="50px" height="auto" >
+            <p>The information provided here is accurate and up-to-date. Great job! I recommend this site to anyone looking for reliable
+               phone information.</p>
+            <cite>-  Chinedu</cite>
+          </div>
+
+          <!-- Add more reviews as needed -->
+
+      </div>
+
+  </div>
+</div>
+
+
+
+<div class="container-fluid mt-5 forms ">
+  <div class="row align-items-center justify-content-center">
+      <!-- Newsletter Form -->
+      <div class="col-md-6 mb-5  ">
+   
+
+<!-- Users' Fav Brand Section with Bootstrap Tabs -->
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Users' Fav Brand</h2>
+
+  <!-- Tabs -->
+  <ul class="nav nav-tabs" id="favBrandTabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="iphones-tab" data-toggle="tab" href="#iphones" role="tab" aria-controls="iphones" aria-selected="true">iPhones</a>
+    </li>
+    <li class="nav-item">                                                                     
+      <a class="nav-link" id="samsung-tab" data-toggle="tab" href="#samsung" role="tab" aria-controls="samsung" aria-selected="false">Samsung</a>
+    </li>
+  </ul>
+
+  <!-- Tab Content -->
+  <div class="tab-content" id="favBrandTabsContent">
+    <!-- iPhones Tab Content -->
+    <div class="tab-pane fade show active" id="iphones" role="tabpanel" aria-labelledby="iphones-tab">
+      <div class="row mt-3">
+        <!-- iPhone Design 1 -->
+        <div class="col-md-6">
+          <div class="card">
+            <img src="12 pro.jfif" class="card-img-top" alt="iPhone Design 1">
+            <div class="card-body">
+              <h5 class="card-title">iPhone 12 pro-max</h5>
+              <p class="card-text">The iPhone 12 Pro Max display has rounded corners 
+                that follow a beautiful curved design, and these corners are within a 
+                standard rectangle. When measured as a standard rectangular shape, 
+                the screen is 6.68 inches diagonally
+                 (actual viewable area is less).</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- iPhone Design 2 -->
+        <div class="col-md-6 ">
+          <div class="card">
+            <img src="13.jfif" class="card-img-top" alt="iPhone Design 2" height="50px">
+            <div class="card-body">
+              <h5 class="card-title">iphone 13 pro</h5>
+              <p class="card-text">
+                The iPhone 13 features a 6.1-inch (155 mm) display with Super Retina XDR
+                 OLED technology at a resolution of 2532×1170 pixels and a pixel density of
+                  about 460 PPI with
+                 a refresh rate of 60 Hz.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Samsung Tab Content -->
+    <div class="tab-pane fade" id="samsung" role="tabpanel" aria-labelledby="samsung-tab">
+      <div class="row mt-3">
+        <!-- Samsung Design 1 -->
+        <div class="col-md-6">
+          <div class="card">
+            <img src="ultra23.jfif" class="card-img-top" alt="Samsung Design 1">
+            <div class="card-body">
+              <h5 class="card-title">Samsung Galaxy s23 ultra</h5>
+              <p class="card-text">The Samsung Galaxy S23 Ultra is the
+                 headliner of the S23 series. Specifications are top-notch
+                  including 6.8-inch Dynamic AMOLED display with 120Hz refresh rate, Snapdragon 8 Gen 2 processor, 5000mAh battery, up to 12gigs of RAM, and 1TB of storage.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Samsung Design 2 -->
+        <div class="col-md-6">
+          <div class="card">
+            <img src="fold.jfif" class="card-img-top" alt="Samsung Design 2">
+            <div class="card-body">
+              <h5 class="card-title">Samsung Galaxy Z Fold 4</h5>
+              <p class="card-text">
+                You don't have to sweat the forecast when you've got one of the world's
+                 first water-resistant foldable smartphones. With the upgraded Rear Camera,
+                  Space Zoom and Nightography, 
+                we're bringing a pro-level kit to the foldable form for the first time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+
+      <!-- Contact Us Form -->
+      <div class="col-md-6 ">
+          <div class="shadow-lg p-3 mb-5 bg-white rounded mt-5 border-radius-5">
+              <div class="card-body">
+                  <h2 class="card-title">Contact Us</h2>
+                  <form action="contact.php" method="post">
+                      <div class="form-group">
+                          <label for="name">Name:</label>
+                          <input type="text" class="form-control" id="name" name="name" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="email">Email:</label>
+                          <input type="email" class="form-control" id="email" name="email" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="message">Message:</label>
+                          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Send Message</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">                                                                                    
+      <!-- Add your social media links or remove as needed -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Newsletter Form -->
+    <section class="">
+      <form action="#">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <p class="pt-2">
+              <strong>Stay informed with the latest phone updates. Subscribe to our newsletter!</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="newsletterEmail" class="form-control" placeholder="Your email address" />
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Subscribe button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Newsletter Form -->
+
+    <!-- Section: About Us -->
+    <section class="mb-4">
+      <h4 class="text-uppercase">About Us</h4>
+      <p>
+        Discover the latest information on phone brands and make informed decisions about your next device.
+      </p>
+    </section>
+    <!-- Section: About Us -->
+
+    <!-- Section: Quick Links -->
+    <section class="mb-4">
+      <h4 class="text-uppercase">Quick Links</h4>
+      <ul class="list-unstyled mb-0">
+        <li><a href="#!" class="text-white">Top Brands</a></li>
+        <li><a href="#!" class="text-white">Latest Releases</a></li>
+        <li><a href="#!" class="text-white">Comparison Guide</a></li>
+        <li><a href="#!" class="text-white">Reviews</a></li>
+      </ul>
+    </section>
+    <!-- Section: Quick Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Your Phone Info Website. All rights reserved.
+  </div>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    Designed and created by George Clinton
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+  
 
 <script>
     // Add click event to make the clicked card active
